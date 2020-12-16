@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+#navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #5555ff;
+}
+#navbarBlock{
+    height: 100px;
+    width: 100%;
+    background-color: #ff5555;
+}
+#navbarAdmin{
+    height: 100px;
+    width: 100%;
+    background-color: #eeee55;
+}
+ul{
+    position: absolute;
+    top: 5px;
+}
+#adminOnUl{
+    top: 105px;
+}
+#adminOnUl a{
+    color: black;
+}
+li{
+    display: inline;
+}
+a{
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+#webName{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 200px;
+    color: #dddddd;
+}
+form{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.formularz{
+    display: flex;
+}
+.labelList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    margin: 10px;
+    font-size: 40px;
+}
+.inputList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin: 10px;
+    font-size: 40px;
+}
+select{
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+}
+.checkbox{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+}
+.radio{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+}
+.submit{
+    margin: 30px;
+    width: 500px;
+}

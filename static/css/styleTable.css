@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    margin: 20px;
+}
+ul{
+    top: 5px;
+}
+li{
+    display: inline;
+}
+a{
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+form{
+    margin: 60px;
+    font-size: 30px;
+}
+table, td{
+    margin-left: 60px;
+    border: #eeee55 1px solid;
+    font-size: 30px;
+}
