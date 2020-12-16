@@ -2,7 +2,7 @@ var express = require("express")
 var app = express()
 var path = require("path")
 var bodyParser = require("body-parser")
-const PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 app.use(express.static('static'))
 
