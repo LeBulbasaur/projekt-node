@@ -86,8 +86,8 @@ app.get("/loginForm", function (req, res) {
     console.log(req.query)
 })
 app.get("/sort", function (req, res) {
-    res.sendFile(path.join(__dirname + "/static/sort.html"));
     if (logged == true) {
+        res.sendFile(path.join(__dirname + "/static/sort.html"));
         let sorted = []
         for (i = 0; i < users.length; i++) {
             sorted.push(users[i])
@@ -127,7 +127,7 @@ app.get("/sort", function (req, res) {
         webString = webString + "</table></body>"
         res.send(webString)
     } else {
-        res.redirect("/admin")
+        res.sendFile(path.join(__dirname + "/static/admin.html"))
     }
 })
 app.get("/sortForm", function (req, res) {
@@ -180,8 +180,8 @@ app.get("/sortForm", function (req, res) {
     res.send(webString)
 })
 app.get("/show", function (req, res) {
-    res.sendFile(path.join(__dirname + "/static/gender.html"));
     if (logged == true) {
+        res.sendFile(path.join(__dirname + "/static/show.html"))
         let sorted = []
         for (i = 0; i < users.length; i++) {
             sorted.push(users[i])
@@ -226,12 +226,12 @@ app.get("/show", function (req, res) {
         webString = webString + "</table></body>"
         res.send(webString)
     } else {
-        res.redirect("/admin")
+        res.sendFile(path.join(__dirname + "/static/admin.html"))
     }
 })
 app.get("/gender", function (req, res) {
-    res.sendFile(path.join(__dirname + "/static/gender.html"));
     if (logged == true) {
+        res.sendFile(path.join(__dirname + "/static/gender.html"))
         let sorted = []
         for (i = 0; i < users.length; i++) {
             sorted.push(users[i])
@@ -274,7 +274,7 @@ app.get("/gender", function (req, res) {
         webString = webString + "</table></body>"
         res.send(webString)
     } else {
-        res.redirect("/admin")
+        res.sendFile(path.join(__dirname + "/static/admin.html"))
     }
 })
 app.listen(PORT, function () {
